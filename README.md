@@ -1,11 +1,10 @@
 <pre>
-
-Project .....: NetBeansJavaAppTemplate
+Project .....: JavaAppsSwingManualTemplate
 Summary .....: Template for Java Application Projects on NetBeans IDE
-Creation ....: 17/04/2017
-Author ......: José A. Pacheco Ondoño - joanpaon@gmail.com
+Created .....: 16/04/2018
+Updated .....: 16/04/2018
+Author ......: Halloween DeFranco - Halloween@gmail.com
 Platform ....: Java 8
 IDE .........: NetBeans 8.2
-Remote ......: https://github.com/joanpaon/NetBeansJavaAppTemplate.git
-
+Remote ......: https://github.com/CristianHLL/JavaAppsSwingManualTemplate.git
 </pre>
