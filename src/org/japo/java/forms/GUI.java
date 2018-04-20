@@ -16,11 +16,15 @@
 package org.japo.java.forms;
 
 import com.sun.org.apache.xerces.internal.impl.xs.util.XInt;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.GridBagLayout;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.util.Properties;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import org.japo.java.events.KEM;
 import org.japo.java.events.MEM;
@@ -62,9 +66,21 @@ public class GUI extends JFrame {
     private void initComponents() {
         // Panel Principal
         JPanel pnlPpal = new JPanel();
-        pnlPpal.setBackground(java.awt.Color.MAGENTA);
-        pnlPpal.setLayout(new GridBagLayout());
-
+        pnlPpal.setBackground(java.awt.Color.RED);
+        //pnlPpal.setLayout(new GridBagLayout());
+        JLabel lblRotulo = new JLabel("¡REPTILIANOS!");
+        lblRotulo.setHorizontalAlignment (JLabel.CENTER);
+        lblRotulo.setOpaque(true);
+        lblRotulo.setBackground(Color.red);
+        lblRotulo.setForeground(Color.white);
+        lblRotulo.setFont(new Font("Swis721 Blk BT", Font.BOLD,60));
+        
+        //JPanel pnlPpal = new Jpanel();
+        pnlPpal.setLayout(new BorderLayout());
+        pnlPpal.add(lblRotulo,BorderLayout.CENTER);
+        
+        
+        
         // Ventana Principal
 //        setContentPane(pnlPpal);
 //        setTitle("Swing Manual #00");
@@ -73,7 +89,7 @@ public class GUI extends JFrame {
 //        setLocationRelativeTo(null);
 //        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setContentPane(pnlPpal);
-        setTitle("Swing Manual #02");
+        setTitle("Swing Manual #03");
         setResizable(false);
         setSize(500, 300);
         setLocationRelativeTo(null);
@@ -82,6 +98,10 @@ public class GUI extends JFrame {
         addKeyListener(new KEM(this));
         addMouseMotionListener(new MMEM(this));
         addMouseListener(new MEM(this));
+        
+        
+        
+        
 
     }
 
